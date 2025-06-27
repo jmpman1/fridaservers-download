@@ -29,14 +29,14 @@ This script will:
 ## Requirements
 
 - `curl` for downloading
-- [`gojq`](https://github.com/itchyny/gojq) for parsing JSON from GitHub API
+- [`jq`](https://github.com/jqlang/jq) for parsing JSON from GitHub API
 - `xz` for extracting `.xz` files
 - Unix-based operataing system (Linux, macOS)
 
 > [!NOTE]
-> While **gojq** can be installed via **apt** on Kali Linux, it is recommended
+> While **jq** can be installed via **apt** on Kali Linux, it is recommended
 > to download the latest release from the official GitHub page due to differences
-> between the available versions. For more information and version comparisons, visit https://github.com/itchyny/gojq and https://pkg.kali.org/pkg/gojq
+> between the available versions. For more information and version comparisons, visit [https://github.com/jqlang/jq](https://github.com/jqlang/jq)
 
 ## Installation
 
