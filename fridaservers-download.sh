@@ -5,14 +5,14 @@
 # Author: jmpman
 # Date: 09/28/24
 
-URLS=$(curl -s https://api.github.com/repos/frida/frida/releases/latest | gojq '.assets[] | select(.name | contains ("server")) | .browser_download_url')
-VERSION=$(curl -s https://api.github.com/repos/frida/frida/releases/latest | gojq '.tag_name' | tr -d '"')
+URLS=$(curl -s https://api.github.com/repos/frida/frida/releases/latest | jq '.assets[] | select(.name | contains ("server")) | .browser_download_url')
+VERSION=$(curl -s https://api.github.com/repos/frida/frida/releases/latest | jq '.tag_name' | tr -d '"')
 
 banner() {
 	echo "     ____
     / _  |   
    | (_| |
-    > _  |   Frida Servers Download v1.0
+    > _  |   Frida Servers Download v2.0
    /_/ |_|   by jmpman
    . . . .     
    . . . .
